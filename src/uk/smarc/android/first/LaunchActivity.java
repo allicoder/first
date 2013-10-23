@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LaunchActivity extends Activity {
 
@@ -32,7 +33,7 @@ public class LaunchActivity extends Activity {
     mMessageContent = mMessageField.getText().toString();
     Log.d(TAG, "Message reads: " + mMessageContent);
     Intent intent = new Intent(this, DisplayMessageActivity.class);
-    intent.putExtra(EXTRA_MESSAGE, message);
+    intent.putExtra(EXTRA_MESSAGE, mMessageContent);
     startActivity(intent);
     toast("Message sent!");
   }

@@ -14,8 +14,10 @@
 
     <activity android:name="DisplayMessageActivity"
       android:label="@string/displayMessageActivityTitle"
-      android:parentActivityName="uk.smarc.android.first.LaunchActivity"
       >
+      <!-- 
+      android:parentActivityName="uk.smarc.android.first.LaunchActivity"
+      -->
       <!-- Implement default navigation behaviour on older platforms using the
            support library. -->
       <meta-data
