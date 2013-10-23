@@ -1,0 +1,8 @@
+bin
+obj
+gen
+build.xml
+local.properties
+logcat.txt
+.*.swp
+*~

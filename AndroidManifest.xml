@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="uk.smarc.android.first"
+  android:versionCode="1"
+  android:versionName="1.0">
+  <application android:label="@string/app_name" >
+    <activity android:name="LaunchActivity"
+      android:label="@string/mainActivityTitle">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity android:name="DisplayMessageActivity"
+      android:label="@string/displayMessageActivityTitle"
+      android:parentActivityName="uk.smarc.android.first.LaunchActivity"
+      >
+      <!-- Implement default navigation behaviour on older platforms using the
+           support library. -->
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="uk.smarc.android.first.LaunchActivity"
+        />
+    </activity>
+  </application>
+</manifest> 
